@@ -1,6 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
+<<<<<<< HEAD
   - gotk-components.yaml
   - gotk-sync.yaml
 patches:
@@ -22,3 +23,7 @@ patches:
     target:
       kind: Deployment
       labelSelector: app.kubernetes.io/part-of=flux
+=======
+- gotk-components.yaml
+- gotk-sync.yaml
+>>>>>>> 9de948891658cb2838717bbab70209f44b74b1d5
